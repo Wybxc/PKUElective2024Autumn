@@ -1,9 +1,9 @@
 import os
 from ..utils import xMD5
 
-class Captcha(object):
 
-    __slots__ = ['_code','_original','_denoised','_segments','_spans']
+class Captcha(object):
+    __slots__ = ['_code', '_original', '_denoised', '_segments', '_spans']
 
     def __init__(self, code, original, denoised, segments, spans):
         self._code = code

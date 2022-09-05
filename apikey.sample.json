@@ -1,5 +1,6 @@
 {
     "username": "xiaoming",
     "password": "xiaominghaoshuai",
-    "RecognitionTypeid": "1003"
+    "RecognitionTypeid": "1003",
+    "Timeout": "5"
 }

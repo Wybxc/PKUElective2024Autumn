@@ -1,30 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # filename: loop.py
-
+import json
 import os
-import time
 import random
-from queue import Queue
+import time
 from collections import deque
 from itertools import combinations
-from requests.compat import json
-from requests.exceptions import RequestException
+from queue import Queue
+
 import numpy as np
+from requests.exceptions import RequestException
+
 from . import __version__, __date__
-from .environ import Environ
+from ._internal import mkdir
+from .captcha.online import TTShituRecognizer
+from .captcha.proxy import RecognitionProxy
 from .config import AutoElectiveConfig
-from .logger import ConsoleLogger, FileLogger
-from .course import Course
-from .captcha import TTShituRecognizer, Captcha
-from .parser import get_tables, get_courses, get_courses_with_detail, get_sida
+from .const import USER_AGENT_LIST, WEB_LOG_DIR, WECHAT_MSG, WECHAT_PREFIX
+from .elective import ElectiveClient
+from .environ import Environ
+from .exceptions import *
 from .hook import _dump_request
 from .iaaa import IAAAClient
-from .elective import ElectiveClient
-from .const import CAPTCHA_CACHE_DIR, USER_AGENT_LIST, WEB_LOG_DIR, WECHAT_MSG, WECHAT_PREFIX
-from .exceptions import *
-from ._internal import mkdir
+from .logger import ConsoleLogger, FileLogger
 from .notification.wechat_push import Notify
+from .parser import get_tables, get_courses, get_courses_with_detail, get_sida
 
 environ = Environ()
 config = AutoElectiveConfig()
@@ -54,6 +55,7 @@ mkdir(_USER_WEB_LOG_DIR)
 
 # recognizer = CaptchaRecognizer()
 recognizer = TTShituRecognizer()
+asyncRecognizer = RecognitionProxy()
 RECOGNIZER_MAX_ATTEMPT = 15
 
 electivePool = Queue(maxsize=elective_client_pool_size)
@@ -507,14 +509,14 @@ def run_elective_loop():
 
                 cout.info("Try to elect %s" % course)
 
-                ## validate captcha first
+                # validate captcha first
 
                 while True:
 
                     cout.info("Fetch a captcha")
                     r = elective.get_DrawServlet()
 
-                    captcha = recognizer.recognize(r.content)
+                    captcha = asyncRecognizer.recognize(r.content)
                     cout.info("Recognition result: %s" % captcha.code)
 
                     r = elective.get_Validate(username, captcha.code)
