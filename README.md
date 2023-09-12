@@ -1,4 +1,4 @@
-# PKUAutoElective 2022 Spring Version
+# PKUAutoElective 2023 Autumn Version
 
 ## (可选)推送刷课进度、刷课机运行状态和错误信息到微信（需要用到第三方平台sre24）
 
@@ -21,18 +21,24 @@
 
 **Update at Mar 7 15:28 (UTC+8)**: 修改了 `get_supplement` 的 API 参数，已经可以实现课程列表页面的正常跳转，请更新至最新 commit 版本。
 
-本项目基于 [PKUAutoElective](https://github.com/zhongxinghong/PKUAutoElective)，对 2021 春季学期的选课网站 API 改动进行了调整。并针对验证码系统的改动，将识别系统转为在线商用平台 [TT识图](http://www.ttshitu.com)（打钱！打钱！），目前识别准确度仍然略微堪忧。
+本项目基于 [PKUAutoElective](https://github.com/Totoro-Li/PKUElective2022Spring)，修复了一些 main 分支上因版本迭代更新导致的 bug 。2023年秋季学期仍然可用。
 
 ## 安装
 
-请参考 [PKUAutoElective](https://github.com/zhongxinghong/PKUAutoElective) 项目提供的安装指南进行安装，但本项目**不**依赖于 `pytorch`，因此可以**省略**其中的以下部分
+使用 git 命令行
+```
+git clone https://github.com/PaperCrane-ovo/PKUElective2023Autumn
+```
+或下载 zip 包，将代码弄到本地。
 
-> 安装 PyTorch，从 PyTorch 官网 中选择合适的条件获得下载命令，然后复制粘贴到命令行中运行即可下载安装。（注：本项目不需要 cuda，当然你可以安装带 gpu 优化的版本）
-> 
-> ......
-> 
-> PyTorch 安装时间可能比较长，需耐心等待。
-> 如果实在无法安装，可以考虑用其他方式安装 PyTorch，详见附页 PyTorch 安装
+你需要使用 python3 ，建议使用 conda 或 venv 虚拟环境。
+
+然后安装本项目依赖：
+
+```
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 
 ## 配置文件
 
@@ -60,7 +66,7 @@
 将项目 clone 至本地后，切换至项目根目录下并运行 `main.py` 即可。
 
 ```
-cd PKUElective2021Spring
+cd PKUElective2023Autumn
 python3 main.py
 ```
 
