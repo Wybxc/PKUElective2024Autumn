@@ -64,7 +64,7 @@ reloginPool = Queue(maxsize=elective_client_pool_size)
 goals = environ.goals  # let N = len(goals);
 ignored = environ.ignored
 mutexes = np.zeros(0, dtype=np.uint8)  # uint8 [N][N];
-delays = np.zeros(0, dtype=np.int)  # int [N];
+delays = np.zeros(0, dtype=np.int32)  # int [N];
 
 killedElective = ElectiveClient(-1)
 NO_DELAY = -1
@@ -516,7 +516,7 @@ def run_elective_loop():
                     cout.info("Fetch a captcha")
                     r = elective.get_DrawServlet()
 
-                    captcha = asyncRecognizer.recognize(r.content)
+                    captcha = recognizer.recognize(r.content)
                     cout.info("Recognition result: %s" % captcha.code)
 
                     r = elective.get_Validate(username, captcha.code)
