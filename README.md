@@ -12,14 +12,14 @@
 
 可以通过notification/wechat_push.py中的test_notify()以测试设置是否正确。
 
-**Update at Feb 21, 2022**: 验证码错误时，少数情况下重试会出现`NoneType' object has no attribute 'tobytes'`报错，且exceptions中并未提供处理机制。考虑到Captcha类成员函数save()对主要功能并无影响，故删除loop.py中相关调用以避免程序异常停止。
-
-**Update at Feb 20, 2022**: 对KingOfDebug同学的repo出现`[104] unable to parse HTML content`的问题，对parsing.py, captcha/等部分进行了替换，同步修改了loop.py
+> **Update at Feb 21, 2022**: 验证码错误时，少数情况下重试会出现`NoneType' object has no attribute 'tobytes'`报错，且exceptions中并未提供处理机制。考虑到Captcha类成员函数save()对主要功能并无影响，故删除loop.py中相关调用以避免程序异常停止。
+> 
+> **Update at Feb 20, 2022**: 对KingOfDebug同学的repo出现`[104] unable to parse HTML content`的问题，对parsing.py, captcha/等部分进行了替换，同步修改了loop.py
 同时对captcha/online.py中的TTShituRecognizer类进行修改，对data增加typeid==7，调用平台的无感学习模型，规避TT平台默认的英文数字混合，在改版后识别率欠佳的问题。
 
 ## 感谢zhongxinghong, Mzhhh, KingOfDeBug等同学
 
-**Update at Mar 7 15:28 (UTC+8)**: 修改了 `get_supplement` 的 API 参数，已经可以实现课程列表页面的正常跳转，请更新至最新 commit 版本。
+> **Update at Mar 7 15:28 (UTC+8)**: 修改了 `get_supplement` 的 API 参数，已经可以实现课程列表页面的正常跳转，请更新至最新 commit 版本。
 
 本项目基于 [PKUAutoElective](https://github.com/Totoro-Li/PKUElective2022Spring)，修复了一些 main 分支上因版本迭代更新导致的 bug 。2023年秋季学期仍然可用。
 
