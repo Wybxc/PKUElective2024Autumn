@@ -1,0 +1,254 @@
+version = 1
+requires-python = "<=3.10"
+
+[[package]]
+name = "aiohttp"
+version = "2.3.1"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+dependencies = [
+    { name = "async-timeout" },
+    { name = "chardet" },
+    { name = "multidict" },
+    { name = "yarl" },
+]
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2e/e6/9175733f42cec4f2cd6834564517f2f6260e27dab5edb75afdaa66f101bb/aiohttp-2.3.1.tar.gz", hash = "sha256:04f58bbcc9ae6f9aec30b9219ae47fa3c31586c77679405720545738ea62236e" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/cc/b4/e4a16e83e115428869cc58d5e52c4e8f02a1f192a9102906f531b1553a42/aiohttp-2.3.1-cp34-cp34m-macosx_10_10_x86_64.whl", hash = "sha256:078e1b47799c04ebf2847da5dd64481aea51c358b3546aa52a30ebb142036f93" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/04/e0/edcf66c450f682433a74d7ecec6e8a833fc36ed582c44b499ba5aa10df49/aiohttp-2.3.1-cp34-cp34m-macosx_10_11_x86_64.whl", hash = "sha256:6b3a04457ef7477456719179b558dbe74a604c5f1381c31a8609e21c7d769ff0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/86/8e/5732497ca95f3841d5e5ceecd7a997c5292d331e29948bd612a993e857fe/aiohttp-2.3.1-cp34-cp34m-macosx_10_12_x86_64.whl", hash = "sha256:2345cd90aad4a9670edc76930a1b19d7771138c2f711093eb4a1e7fbda55486b" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/1f/d4/a85e28ff689ed3268a258a79a26baae8ffaab38996c683b2e116e6dfa8a3/aiohttp-2.3.1-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:3a21dac27dd56c5087b7380ca81544f84b2600b18df07ccecd53fb4c3f50b29c" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2e/72/3360442f0d0c93aa9592ac4834db07f9a89deb212a3e227971fb527ce153/aiohttp-2.3.1-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:cf89f42dcdf8c31f0ec69c674afaf16511cb8d7c76067aab0642bd521c88bda5" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/d1/52/f058334211e1227ddf1e2e447f9b5f2ca0da1364343edfd7afe436d547dd/aiohttp-2.3.1-cp34-cp34m-win32.whl", hash = "sha256:9ed7dcd2c4e930c2af5d1cc270e97fcd90af73f0936fd9513d4165f2c9bb6a3e" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/94/44/7f5381a6846a3b2267e03f851aa4fd4b3a02cdfc57c1ee9759ca5223f0d2/aiohttp-2.3.1-cp34-cp34m-win_amd64.whl", hash = "sha256:892881fdba7a2b8a8f5da8f74d36e7280043b6373f9194dddae1a6ad55f09bbb" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/91/1a/d74d893d14d47a72bc7fe07ec48ed20d823bfd9f9a543f8644eb016aaf47/aiohttp-2.3.1-cp35-cp35m-macosx_10_10_x86_64.whl", hash = "sha256:cd004e4fef3c8737ab15b296ea639a1b4f4bc4e18f9f0d8eb9bfed9425d2eb71" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/cc/29/42e707124c4cd4d6a8645d0b4126c7d545c4b9350c928f62caf1a69524a7/aiohttp-2.3.1-cp35-cp35m-macosx_10_11_x86_64.whl", hash = "sha256:d81a711c888399511f76e3b3fc6473e9c467e0978d1c03e315d92bfd0cf1b817" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/fc/52/01dc4ae27df3c92128ba051f86852d4156948b88fb90ea9ed14713e32273/aiohttp-2.3.1-cp35-cp35m-macosx_10_12_x86_64.whl", hash = "sha256:f2dd961ab8e7033bb966458eaa4707338ec1ec41b553bbdc61920f3746c06a52" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/1b/a6/099348350ee3d9c8000647d41554caafbb78860e8b65a1146d4f578dee51/aiohttp-2.3.1-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:b34ef58ef0dfb3db17b9261904849ecbf2f2376ec6e1dbc25b282612d0446651" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/54/a2/0d14b66bb7da046c7a1132744a2a52fb3b6a1c96a05700f83557f2ec9c9d/aiohttp-2.3.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:29d215f084b743ccbd19fb575cbd3eff1357c7611e0a8a22093e348f2227848a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/3d/ee/b4d6bbb581c6d518ab69e47ae086ff23d084423ffb0fa38fb3bed9bee312/aiohttp-2.3.1-cp35-cp35m-win32.whl", hash = "sha256:bce9f418782789757537657010b2d7b2a7fb5a8171eff206531f248c41617e32" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/3e/5c/5e4c1b720a0b81cd33cc6cd1333e918845ec7e3bba44efaf5c69fb6f5662/aiohttp-2.3.1-cp35-cp35m-win_amd64.whl", hash = "sha256:ed795ac9548747b04eaf04f6bf4589341556f93aad9ae0016e42f9a47d0e2ffa" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f5/8b/ea20b38d6da50245709f5fddda7bc9ababcb1e3a9fe56ae6ff9d5cfbbf6c/aiohttp-2.3.1-cp36-cp36m-macosx_10_10_x86_64.whl", hash = "sha256:d90b33372b12aecdd62ca83b00f384dd5e7f29d1c613ad89d0861515e633a2eb" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b0/75/69d05eb8a8c7d3f8698b5fb3c9b3442f234e9678ecc8b6b9c858b3fc718f/aiohttp-2.3.1-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:5f7a6bf226b7a3ac9bb7c08ba3fe2e8a5418fd9472e5099f275d8258055bbc2a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7b/63/e16fd413a99e30868dc883fa0989d6b9f3b0afee0dd2168792930b04c092/aiohttp-2.3.1-cp36-cp36m-macosx_10_12_x86_64.whl", hash = "sha256:900584dbf8abe851007f155ab9d52466bd6f281cc749f43f86b8f9c1adf3e4e3" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/35/01/40ea9ed6037f978601f648f8a89e471f613b33cff7819567e3cb65167702/aiohttp-2.3.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:daf8d56b9c7b5ca553ed23c5559a9489d5acb919c20321ccf8145822fc9dc366" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/5f/d5/e79259187e41e851a238ad150f66d2a433a3a4315c114d70c10ced4d5be2/aiohttp-2.3.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:f5266fce1990a289c7caa092c6e60d9c5162fa204c338748e5164e67c3a77e4b" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/06/0d/20d3d3abf65638e229c50e639c9b4fc03d0be0d2d7c99d85c3a48b0425ff/aiohttp-2.3.1-cp36-cp36m-win32.whl", hash = "sha256:14aba6a4c9d3bfcd570c43c7b203837e426459d0e1df5525d50cfb17c1a70bc0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/12/91/4f6e59c1658c0fcbb491933140842d39bab8bd500add9336813da0e3f046/aiohttp-2.3.1-cp36-cp36m-win_amd64.whl", hash = "sha256:6ad91bc57d89c0a4e66a74fdc29b9805bed32b21ba7e2e1b4f51bda68fe264eb" },
+]
+
+[[package]]
+name = "async-timeout"
+version = "2.0.1"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/23/6d/e37be168272b7a499111d0ed14940da80644d21b201e27980892c7125abb/async-timeout-2.0.1.tar.gz", hash = "sha256:00cff4d2dce744607335cba84e9929c3165632da2d27970dbc55802a0c7873d0" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/1d/b9/213521db2918b5b7f7df333a33ea3d38ba70ba705d9db6c29f0343c213ea/async_timeout-2.0.1-py3-none-any.whl", hash = "sha256:9093db5b8ddbe4b8f6885d1a6e0ad84ae3155464cbf6877c387605244c285f3c" },
+]
+
+[[package]]
+name = "certifi"
+version = "2021.10.8"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz", hash = "sha256:78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569" },
+]
+
+[[package]]
+name = "chardet"
+version = "3.0.4"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691" },
+]
+
+[[package]]
+name = "idna"
+version = "2.6"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f4/bd/0467d62790828c23c47fc1dfa1b1f052b24efdf5290f071c7a91d0d82fd3/idna-2.6.tar.gz", hash = "sha256:2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/27/cc/6dd9a3869f15c2edfab863b992838277279ce92663d334df9ecf5106f5c6/idna-2.6-py2.py3-none-any.whl", hash = "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4" },
+]
+
+[[package]]
+name = "lxml"
+version = "4.4.0"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/e1/f5/5eb3b491958dcfdcfa5daae3c655ab59276bc216ca015e44743c9c220e9e/lxml-4.4.0.tar.gz", hash = "sha256:3b57dc5ed7b6a7d852c961f2389ca99404c2b59fd2088baec6fbaca02f688be4" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/03/59/03a220ffdebaf28554b5037d746b35fd269ff1fac949588b190bd884f791/lxml-4.4.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:2f163c8844db4ed06a230ef092e2461ad01830972a896b8f3cf8b5bac70ae85d" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/e7/0e/526881ee1cc4a30dcd94179f938eb817cbd4dafef692c8af414ab79b7eb6/lxml-4.4.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:f1c2f67df727034f94ccb590142d1d110f3dd38f638a4f1567fdd9f39892ba05" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7b/99/97c2b81a650eb9d30ed9038c2a30d8282693a04c14344236e968fb5184a0/lxml-4.4.0-cp35-cp35m-win32.whl", hash = "sha256:7720174604c7647e357566ac9e4d135c137caed5e7b01223551a4c81c8dc8b9a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/31/fc/93037048f56f4afa6e0327c602d1919847580aa12f2642a5f91b18306086/lxml-4.4.0-cp35-cp35m-win_amd64.whl", hash = "sha256:0f77061c20b4f32b1cf39e8f661c74e966344084c996e7b23c3a94e472461df0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b4/dd/c76154fe8c36fa82c041856982955545964e490522a5358b99992faef250/lxml-4.4.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:5033cf606a7cb559db967689b1b2e743994000f783607ba4c484e90917395ad7" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/df/04/ec2031f033055cf496a781b43a21cb86d2df23d430aae9af3ded436b6b1e/lxml-4.4.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:75d731af05bf40f808d7716e0d26b4b02913402f861c032ce8c36efca350ae72" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b4/32/9ce1edcfd91ffbae0af3836a9ae3fe2d72f6c5f8b6980c7c5294935a0266/lxml-4.4.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:43dac60d10341d3e56be089cd0798b70e70d45ce32279f4c3190d8cbd71350e4" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2c/9f/cd37c2869af8d8915b52813b9177e0e5b7319f5199d8ffb3216a8f84d345/lxml-4.4.0-cp36-cp36m-win32.whl", hash = "sha256:4665ee84ac8ba11d58f1ed517e29ea8536b4ae4e0c6fb6c7d3dce70abcd279f0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/90/e2/fa3d40b4de170d35c3f6b4cc4c25ef0eaea93d08f598a4d7c0d61bd2886b/lxml-4.4.0-cp36-cp36m-win_amd64.whl", hash = "sha256:da5c48ec9f8d8b5df42d328b6d1fb8d9413cd664a2367ef4f6f7cc48ee5b82c0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/05/fe/ffc5c23db9afa827660290e03d22f6736f9028b85eb8cf0dba15aff54356/lxml-4.4.0-cp37-cp37m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:0fef86edfa2f146b4b0ae2c6c05c3e4a8f3388b3655eafbc4aab3247f4dabb24" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/36/78/21cab1b4f269e8c3bb88e93016b16df023a69c73e31e7adafb2c125b30e7/lxml-4.4.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:f840dddded8b046edc774c88ed8d2442cdb231a68894c42c74e3a809450fae76" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f0/34/bd9aaf095af93648bf9e2738b1105460e2687c2202f24b8046cf9bca6895/lxml-4.4.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d5a61e9c2322b45f259909a02b76bc98c4641214e22a37191d00c151aa9cdb9a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f4/d5/4827379b17ef9f7afb9905e55db602278da8ebd7cee839b158db77b82516/lxml-4.4.0-cp37-cp37m-win32.whl", hash = "sha256:da22c4b17bc17dad9c8faf6d94c8fe568ac71c867a56631ab874da418fc7f8f7" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/21/ba/ca19058e1ae455c0425f72bd9fe1a0493e89f19f494b46a5c88867371def/lxml-4.4.0-cp37-cp37m-win_amd64.whl", hash = "sha256:3e86e5df4a8edd6f725f3c76f1d45e046d4f3aa40478092e4f5f373ad1f526e2" },
+]
+
+[[package]]
+name = "multidict"
+version = "3.3.1"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ce/00/5b911969e1737f4d31eca7cd93a8b782ad54f10d2b2f6b9fa180317b27f8/multidict-3.3.1.tar.gz", hash = "sha256:c926066aab40f2cdc834f481f6ada0b1a4fdb486565182dfe3ce7679d52d125a" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b7/5e/2ebead42ec7c99f05e1f209f4f68d1281e580fa7b5097c2af90e660f0f8d/multidict-3.3.1-cp34-cp34m-macosx_10_10_x86_64.whl", hash = "sha256:4a328b216e324e15abc1735f513dd345a31e8b2d09e6f0e4a34000f1e963d85b" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/84/74/e60996fd10535ac86ab1dcd35717b4222139534477adbfa8f680dd400b53/multidict-3.3.1-cp34-cp34m-macosx_10_11_x86_64.whl", hash = "sha256:2034bde19e67907bf554e4612e2de34be93c43ab21d4ae47279824f3525c40fd" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/96/81/340fa641bc7e34518ae6b43e0fc715ea6b9706389a0d1c0731b123c266ce/multidict-3.3.1-cp34-cp34m-macosx_10_12_x86_64.whl", hash = "sha256:d1d2f4d02e346bfdac911e1c105438e6405bf4f5f847f047c573ce071818f9f0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a6/75/31c03e3b266a8c4f1808c6405d576d13ac80fbd593608697a8c726b52fed/multidict-3.3.1-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:15b5ce5320eacad3ddd98c3437f696c6059fa2a0c5312727338fd2f9046aab0a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ef/db/11b81e02a517d9f8c7930f75b21ddf16059a8f7572649e8dfabfbc641c56/multidict-3.3.1-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:25ddd2a5ca2c4e3c234d4b702be70a60561a1efadad63b6890c30a87c5536b84" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/66/2c/b63fee2c57d0329e294011c05f894aaa8e0fd8e995c53727cb55a8a4ce53/multidict-3.3.1-cp34-cp34m-win32.whl", hash = "sha256:109b0f531d8a6071b6a109a6fc762baeaddad4a38c8abb3d5a69b90b909f4f6c" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/bd/24/d5289eab76200363e47f0e3345292a8a0f9695327c661700e0794b337540/multidict-3.3.1-cp34-cp34m-win_amd64.whl", hash = "sha256:653a8cdfd950d85e683d359a92b12bb901127e2c5649adb2b992d356056adae3" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/08/df/d35dd1a73274df7e8026d84414d2a378941b6cb0a48b819b229c7971091a/multidict-3.3.1-cp35-cp35m-macosx_10_10_x86_64.whl", hash = "sha256:fbcdaf438ab63851dad8bdc85f137b4101ad0a1e8a18919ebf88eaacdbda2f5f" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/46/52/cd6dfb0bbccc1e98e9ed3cf946dd7f0ce6aa15d244b7f12b337ac1184378/multidict-3.3.1-cp35-cp35m-macosx_10_11_x86_64.whl", hash = "sha256:8085768567f1b17714cf8d7b7ff4f991b9eb03a56c1e5e3e5a7f9043cb4dab52" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f7/c4/0790087b8b9f63042f81fe4a5fe46fd81a3ce18915278505d773153a5d41/multidict-3.3.1-cp35-cp35m-macosx_10_12_x86_64.whl", hash = "sha256:f44cf3d40a6a26aa2ce3e3ecabeb5459fd4c29becff064e6e546fff8cfde7e78" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/9e/f0/6ba20df4659d0c7cc20433976cd6acf44af32dcf177bc3ab172d62c74ea2/multidict-3.3.1-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:b3b84c79d8cb8db525971e0c489d91fb3cbc30ff8195df8ff281c8c02b9faca0" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/34/e3/9d31789781f832833a1255b561da72d76362c3ee8b367577f181add5c14a/multidict-3.3.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:d398fcda80b8a4509cc56f48208ff748694cfcfe66c0fec0dced8aa725500991" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/69/39/d88bf62979137926aeb81b21d461bd0fd07f458f65961865f9c6317e8760/multidict-3.3.1-cp35-cp35m-win32.whl", hash = "sha256:ba2cd5528c46d10e0405340bab8add78cde1afff9a5f7c04fd3d6da6105b5a54" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7a/9c/150ee3938d160d8c2c1ffc48f1784ef4946b6e3c7dd8d86e3bc039fcada4/multidict-3.3.1-cp35-cp35m-win_amd64.whl", hash = "sha256:ed1b732c912b9ed625822a33ac4a7f2411bfaa0fac40a08cdbc90bbbe943f5bb" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/82/09/ad1c5691f356f1fe8187b6b4a23fb3da8a99b6857a077629bc4aeda9e7fc/multidict-3.3.1-cp36-cp36m-macosx_10_10_x86_64.whl", hash = "sha256:33c2c4016e6caf9dfbb4cc821944f11711dd1d1ab54fbc49a2a06f491b8f8dea" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2c/cd/ee219f7cd69e48269b7873ee13f7aaa894a803ff51ab8add026d151f6612/multidict-3.3.1-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:e1af9a3fd26cabe5eab6acd193658fd44ac08701951eaa2f58d2f5e2b2a28e24" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/06/09/bd20517422880e5302297b1631d98fb79fcb0cec836cb82eae4a9860640f/multidict-3.3.1-cp36-cp36m-macosx_10_12_x86_64.whl", hash = "sha256:fa9166ad83f990c9c4a8aaf438017f8ece3d4d82a93167283d5aae3460bcdeb9" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2f/f7/5802736636fdb7edb7ca230eb46779866573887a323de33c2e24338f2872/multidict-3.3.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:1f311908a749f341c3b0adb348231a4530f054c5cec28935dcfda5f9c93937be" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/3d/15/318eb7a8e0b55ec816c6677bde8b8529d8bbed60809a530db3cb6bd93ab0/multidict-3.3.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:35c72678176d8ffe736f85fc0fe2c6241fde79cb2ef765de67a940706f4ab7be" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2b/ad/dce22bf61347fc0e7f368ec454e6c48a0f7d9bc23437e1a624a4327e2b99/multidict-3.3.1-cp36-cp36m-win32.whl", hash = "sha256:630032d10e11df92d53acafb07985967fbd32f634c9ca0b3d81807c24711426b" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a4/ad/7e599b5c142cd56acf9245a284bd54d7091de49a5fcc6589a4b7ebbf563d/multidict-3.3.1-cp36-cp36m-win_amd64.whl", hash = "sha256:4d6ab5a9bb5a50dbec6af871e565fd77ba38609bb6075787d9f50039549f2e5a" },
+]
+
+[[package]]
+name = "numpy"
+version = "1.12.1"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a5/16/8a678404411842fe02d780b5f0a676ff4d79cd58f0f22acddab1b392e230/numpy-1.12.1.zip", hash = "sha256:a65266a4ad6ec8936a1bc85ce51f8600634a31a258b722c9274a80ff189d9542" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/32/15/5dac23340abe95eae4e819f1575fb9be6b87ea92bf31ca808b41119d0346/numpy-1.12.1-cp27-none-win32.whl", hash = "sha256:56e68de63ae738f40669b6a5f0601f9453940a0470a1e9bea16448e5b53f5f28" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a0/61/02bbd10971adb84ba13cf642b7b2702c9d0e20a4432f6cbf0866274bac98/numpy-1.12.1-cp27-none-win_amd64.whl", hash = "sha256:95e52d1077abeead6d205c1fc644f075228813859bb625960c1ae1248c4189ba" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/69/e1/c8b40d1c9e1130996881ad3d42ecec7b31e24307a48c3b23c69ab9a0cafb/numpy-1.12.1-cp34-cp34m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:bcbce5ef18dc826ef67756a0d3669baca815c8d44b26867c6865f714a23d9262" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/88/92/10cb30d909aa55003096ad23bab761bc305c05b7c20c406760c76e0c72e0/numpy-1.12.1-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:d8dbd7e35e4819e059a044c7545d5602937d6b666dbd9b6eb8ff40037ab0980c" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/02/64/c6c1c24ff4dbcd789fcfdb782e343ac23c074f6b8b03e818ff60eb0f937f/numpy-1.12.1-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:4eac5f2f624c5e7eecbdb51395ff39a099c48cab607a158f16f288c6fe39a2b3" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ad/b0/5fcd4319cb4f66db0ebd8facb030981e5a34172a27d35fdeafbf2cfafaaf/numpy-1.12.1-cp34-none-win32.whl", hash = "sha256:9cd16915a815c2f04633d14e7640083c1b72e82b325439c91370adfd376c9975" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/13/9d/c08e7977921729d5655aebdd2e2170641e310e789aa6944fb43a406c0282/numpy-1.12.1-cp34-none-win_amd64.whl", hash = "sha256:4c64d9c389827f310c7f4e7887b741c34c6b2c337ff63a12f66ef0197fdf5366" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7e/79/19053aebeb6e0ddf160ee1776a842d580e69757790ea1af8719d31595485/numpy-1.12.1-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:9ce673bb7b6240b94b60b52186f5c0825f4b31e8191c8bc7412a7d0348fca2cd" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a0/1c/fc043d84afe1157c0ba52ed55d19fbfd51aaacabc81036c74155862aa8d6/numpy-1.12.1-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:130105bfc0b03245115da67b441c48597bf1ed7f5385f8388ce4f75cdf2f91d2" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/71/5c/945047c185332bbaf57c400dc4c9bffa13c97486df3cd99e25a641f1cbbb/numpy-1.12.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:92dce120e385767cbe433719b5e3fdb1ac81907140d3984b3187208f79aff19f" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/6e/06/b83acf0caf285cc9fdcbb45202c1f0609fc06ad7555449a1c6e4d9572a0e/numpy-1.12.1-cp35-none-win32.whl", hash = "sha256:e97cecd783e8e7e70d18a42f6df7f18be14cbcc82fb9b837b03d072d1401ae53" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/92/e2/7d9c6894511337b012735c0c149a7b4e49db0b934798b3ae05a3b46f31f0/numpy-1.12.1-cp35-none-win_amd64.whl", hash = "sha256:818d5a1d5752d09929ce1ba1735366d5acc769a1839386dc91f3ac30cf9faf19" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/e9/57/a204d3eaefc5ba2bb3d93ac1b93d1ab755d3874ab3d9c33a897e9f79b035/numpy-1.12.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:43ccfed0092def52b924e004780517c762f8fce3ececbd3f8e2580ac0538bb5e" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ed/41/59f8fb0197e66377db8407df3ca465011267e988b094c4df0879688efe92/numpy-1.12.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:5cb6341fc885b101978328d3c8d51a069a97a00699a30891106ef7dda56a0d30" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b1/e2/884cfbfd4f21b2313210d1d2ea72ecc381b98826d1b7e6606929ac6c0a08/numpy-1.12.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:5dd60892710df0ef654bbf4d1e3cb53ac79845e55a96e4a26dd47218e06d819a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/1f/47/2b4201be09432abfb52a449f58005d2f014b9d51acceafe54c8192980ccb/numpy-1.12.1-cp36-none-win32.whl", hash = "sha256:727d6373355b00b96d9320254a676b878d6cd43ae409186bec27eec3e5e4e6e7" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/58/1a/473632103d3ef36f20cb578c33bda0fcd2dfd442845e3fedb94b59baf13f/numpy-1.12.1-cp36-none-win_amd64.whl", hash = "sha256:47b4c4da2fe0618b65fd70987a414fdc24c09e1ffdff77f7147a3c6627b07596" },
+]
+
+[[package]]
+name = "olefile"
+version = "0.44"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/35/17/c15d41d5a8f8b98cc3df25eb00c5cee76193114c78e5674df6ef4ac92647/olefile-0.44.zip", hash = "sha256:61f2ca0cd0aa77279eb943c07f607438edf374096b66332fae1ee64a6f0f73ad" }
+
+[[package]]
+name = "pillow"
+version = "4.3.0"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+dependencies = [
+    { name = "olefile" },
+]
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/e0/82/ec499c78bfe4ecaa91c2f3000040451d187ed0a816d58b8543e29c48827f/Pillow-4.3.0.tar.gz", hash = "sha256:a97c715d44efd5b4aa8d739b8fad88b93ed79f1b33fc2822d5802043f3b1b527" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/85/e5/bb8d6d09a6d6055d129ef5dbd0c59e593c450ddc81d9822364c2a8b3245d/Pillow-4.3.0-cp33-cp33m-macosx_10_6_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:4fb8ab0f8895fb946454ef6ffe806f49ee387095f2d6112ae24670e5fb8fbcd9" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/02/b3/ce4268029b071c73b9b5075150551e07eec9b02390b6282b633063fb56a7/Pillow-4.3.0-cp33-cp33m-win32.whl", hash = "sha256:1d742642d01914b7e0cf6fd597a51f57d21fd68f794cf84803e03e72db78a261" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/96/9a/404ed1535b90f8b90f57bd5c301c92f868cdff371027b7644062ed1f0191/Pillow-4.3.0-cp33-cp33m-win_amd64.whl", hash = "sha256:59cef683d79b85d55a950c1e61dc7b6be0c45a5074692746354cd9a8ace1cd17" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/2b/16/9eb1b0153a7df9f6653ad17fef870bcb602856199bfd0b1ea535d5a8b4c4/Pillow-4.3.0-cp34-cp34m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:822e4fc261d12fa44d88dadee0e93d59663db94d962d4ffffbf09b1fe5e5be51" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/02/b2/84aa52bda9fb1beea6ad8ec99e7ee0cc273e957bfc4af97972af5a7e7191/Pillow-4.3.0-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:a6f43511c79bed431ec2b56e55150b5222c732cd9e5f80e77a44e068e94c71fc" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/c3/f4/a0cf4831a77d76896f0fa548867a69b737798edf9d59860bfb3ac941dcc1/Pillow-4.3.0-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:2046a2001e2c413998951cc28aa0dbfd4cff846a12e24c2145d42630d5104094" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/11/42/d96755fee893ab7ea1b85497bfa4a29c89fd4a841c6ba467ee7b30493924/Pillow-4.3.0-cp34-cp34m-win32.whl", hash = "sha256:39c7c9dcf64430091e30ef14d4191b4cae9b7b5ff29762357730aac4866fb189" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7d/d0/c19f558825b5f4de9d7c42634b7a4c7361283a1041c335eaeb661df95737/Pillow-4.3.0-cp34-cp34m-win_amd64.whl", hash = "sha256:f2d71951f473744ac617b645b62d0c4df5372ef4618c425646bfe5e2e8878e61" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ad/cf/925a7cb9421b514c6dc65d2281eb57b21ae7495ca25a7246018600e75518/Pillow-4.3.0-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:9adcfa2477b7e279ebeee75b49f535518201bbd7d26ca2ef1cf6751cb6e658e8" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/c9/89/dd0e8c780d8608fa21e0e61c44cea8a90d60ccf0c2aae58ec46b084ea20a/Pillow-4.3.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:0e3b56364a2c772c961a8faad8a835d3f24d8848310de035c9e07cc006035cbc" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/7f/a2/71529668574aea9bd9281821c6fee9b404ce13e6b2b7394aa37c9360b504/Pillow-4.3.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:92087cb92a968421f42235f7d8153f4766b6ba213a6efb36b8060f3c9d294569" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/5c/7a/ac7cba4cf98075105b16ad07a21f21b4c0400a7773dd12c62322198d3c52/Pillow-4.3.0-cp35-cp35m-win32.whl", hash = "sha256:53eaec751151b5713a15b1cd62b06d0fc16d72f56623c15448728c554c30770b" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/c6/ef/0d18dc37354ba25e11e08e93327581bd53fc736c4b2d90e9be0f5c043a3e/Pillow-4.3.0-cp35-cp35m-win_amd64.whl", hash = "sha256:e595312f67962d6b4fde3b7dffaaaca4becefa522d677676bb57b0ec5f8f921a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b2/58/1460ed282f4886c74588ef70cd9d8ed4fe6420f82ea8dbbf9a1be8ab2a0e/Pillow-4.3.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:dc32362d0cadf18c3aef7040455760106cafe7dd3c211dc27c507e746376bb56" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/40/e5/f22bdc3621810eaaf7b1502d75c515fbbef2a2bfacee7783916327400867/Pillow-4.3.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:759e5e3e99c4ac87b99e9288a75236c63173d1bb24c8d3f9d9d2c8332fceeb0a" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/3c/5c/44a8f05da34cbb495e5330825c2204b9fa761357c87bc0bc1785b1d76e41/Pillow-4.3.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:b13106cb83a3b7d1a02fafb94bfafbc980465ba948b76ea1996245959c6783d2" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/33/68/6966cf2d95d9ec01b151224e764f746fdfe0f549e8a52c7209a1ef888461/Pillow-4.3.0-cp36-cp36m-win32.whl", hash = "sha256:9184b9788a9cf677e53626a4dc141136a22d349a5480479b98defd3cfb5015a4" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/65/9c/714db4a3b4fb1de5663c8dbf93b3196149bd3a126ef826f044b7b2cb5a99/Pillow-4.3.0-cp36-cp36m-win_amd64.whl", hash = "sha256:be803fae6af36639524a0f6861a8cface67bbec66c3416c3eaf592f1d45b8b20" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/af/3c/ce7bb47a8533080e73af7cc837ef0a6368670222e6ab96511c7e3380b5f2/Pillow-4.3.0-pp258-pypy_41-win32.whl", hash = "sha256:effa82e72f5064439a3d2c7ff615b999eb1c4d65bb1f1e6ee6e2ddb345b3e81e" },
+]
+
+[[package]]
+name = "pkuelective2023autumn"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "lxml" },
+    { name = "numpy" },
+    { name = "pillow" },
+    { name = "requests" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "aiohttp" },
+    { name = "lxml" },
+    { name = "numpy" },
+    { name = "pillow" },
+    { name = "requests" },
+]
+
+[[package]]
+name = "requests"
+version = "2.18.4"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "chardet" },
+    { name = "idna" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/b0/e1/eab4fc3752e3d240468a8c0b284607899d2fbfb236a56b7377a329aa8d09/requests-2.18.4.tar.gz", hash = "sha256:9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl", hash = "sha256:6a1b267aa90cac58ac3a765d067950e7dbbf75b1da07e895d1f594193a40a38b" },
+]
+
+[[package]]
+name = "urllib3"
+version = "1.22"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/ee/11/7c59620aceedcc1ef65e156cc5ce5a24ef87be4107c2b74458464e437a5d/urllib3-1.22.tar.gz", hash = "sha256:cc44da8e1145637334317feebd728bd869a35285b93cbb4cca2577da7e62db4f" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/63/cb/6965947c13a94236f6d4b8223e21beb4d576dc72e8130bd7880f600839b8/urllib3-1.22-py2.py3-none-any.whl", hash = "sha256:06330f386d6e4b195fbfc736b297f58c5a892e4440e54d294d7004e3a9bbea1b" },
+]
+
+[[package]]
+name = "yarl"
+version = "0.18.0"
+source = { registry = "https://mirrors.pku.edu.cn/pypi/web/simple" }
+dependencies = [
+    { name = "idna" },
+    { name = "multidict" },
+]
+sdist = { url = "https://mirrors.pku.edu.cn/pypi/web/packages/65/e9/24738bbbf003e812f802d5700c41efe47b0b7cae40556a6ec74af0afc13e/yarl-0.18.0.tar.gz", hash = "sha256:baa0d3f7982fa0c03a55433109c405e79a597141f2e2d6ee7e16c03eabd74886" }
+wheels = [
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/c5/68/ef8954a8ed59241652a5219fb0fefbbcc2ea90aab5d63124cfd2cd2e7d80/yarl-0.18.0-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:beeefbe0edd47fc8b657bf7bf44791f7a6e5b14f3de1846daf999687cb68c156" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/37/97/90c9ffcd452e9e1b817f2bef64f813947d6bc80b4c9bb4349ad5e9af39d5/yarl-0.18.0-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:885e40812ff9fc80e6f28ef04ad6396e3ae583ab504b1a76301fdcec7fc9f30f" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/76/05/49e8051754f7428df651e42d5a3cad391500199c93d0c91b2e4e4a2e1dc5/yarl-0.18.0-cp34-cp34m-win32.whl", hash = "sha256:fe0390a29b5c7e90975feefe863e3d3a851be546bd797b23f338d24a15efa920" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/97/85/0ecd32fa378f6c08c19f4daa60398695ac919b19481224ee0338ff06a1cb/yarl-0.18.0-cp34-cp34m-win_amd64.whl", hash = "sha256:e1da2853a92fbc7e2d0248bbfa931cd621121e70ce6dda7c1eeef3516d51b46c" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/a1/2d/95a2ee637fc119f32e7e7ea789d090b28098e9469d66288efbef7a911438/yarl-0.18.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:d07d3dc6849345b7437dc58ea49ad2a1960017386d86288550728ca38e482ddc" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/99/5c/8edd2a4bc282a883d00b1d706f70a2450ad46a5d4e6400196b910f6c0553/yarl-0.18.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:cf6a3d6fd3e79d3457d520c12d5d18b030d5ca5d0b205ca6481857804d8d944d" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/f6/ee/1655511e0f0a83f51cd93bfe33dea38a0c86ee80041337946b7f0cf0de67/yarl-0.18.0-cp35-cp35m-win32.whl", hash = "sha256:837d866a70f1ea03005914a740bddea89a253afabd6589db981b91738768bd25" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/71/8c/56982503b5696ab03d7feb330e436c87d276c70724b77b8a23bdc24a0e67/yarl-0.18.0-cp35-cp35m-win_amd64.whl", hash = "sha256:d81e45bedefccb97e4e8f7d32cfae0af1d9eadd1ae795fc420c8319c3dab2a28" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/98/de/dd507d6d0f46a478ba0aae240e74b591d6445e25b271e6dafa004600d944/yarl-0.18.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:605480ee43eead69ec8e8c52cdfefc79cef6379cc0e87d908cf290408c1e49af" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/5e/53/8ef8c5d2fd6f2f600a7c98480bd70a107ba769812a3966aaa9e8494b1ef9/yarl-0.18.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:f1201de3e93fb1efc3111c8928d9366875edefd65d77c0f6b847fe299e8e1122" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/9d/1e/7b1a57a377d484b233e035920f31d829c3fdd64a28f1a3f9ec098407260e/yarl-0.18.0-cp36-cp36m-win32.whl", hash = "sha256:a5457e075eab1170141774a8c69906c223ea0088eaebd6ef91b04b33527fa905" },
+    { url = "https://mirrors.pku.edu.cn/pypi/web/packages/44/7d/6a2dedcf40d7b76fde82a545083e9a2589e15a3df22c7ce1c24dbbf7512d/yarl-0.18.0-cp36-cp36m-win_amd64.whl", hash = "sha256:7fad2530cb4ddf2b74c1e4f6f9f0e28eac482094c6542f98fd71ecf67fb4fded" },
+]

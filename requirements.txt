@@ -1,0 +1,7 @@
+requests
+numpy
+pillow
+aiohttp
+lxml
+werkzeug
+flask

@@ -70,7 +70,7 @@ def create_default_threads(options, args, environ):
     return tList
 
 
-def run():
+async def run():
 
     from .environ import Environ
 

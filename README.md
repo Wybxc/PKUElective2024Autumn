@@ -1,4 +1,4 @@
-# PKUAutoElective 2023 Autumn Version
+# PKUAutoElective 2024 Autumn Version
 
 ## (可选)推送刷课进度、刷课机运行状态和错误信息到微信（需要用到第三方平台sre24）
 
@@ -27,18 +27,17 @@
 
 使用 git 命令行
 ```
-git clone https://github.com/PaperCrane-ovo/PKUElective2023Autumn
+git clone https://github.com/Wybxc/PKUElective2024Autumn.git
 ```
 或下载 zip 包，将代码弄到本地。
 
-你需要使用 python3 ，建议使用 conda 或 venv 虚拟环境。
-
-然后安装本项目依赖：
+你需要使用 python3 ，建议使用 uv 创建虚拟环境。
 
 ```
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-
 
 ## 配置文件
 
@@ -66,8 +65,8 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 将项目 clone 至本地后，切换至项目根目录下并运行 `main.py` 即可。
 
 ```
-cd PKUElective2023Autumn
-python3 main.py
+cd PKUElective2024Autumn
+python main.py
 ```
 
 使用 `Ctrl + C` 输送 `KeyboardInterrupt`，可以终止程序运行。

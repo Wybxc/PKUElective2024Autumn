@@ -77,6 +77,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+config.ini
 apikey.json
 *.png
 
